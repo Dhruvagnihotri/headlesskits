@@ -251,7 +251,7 @@ We love contributions! Whether it's:
 - 📖 Documentation improvements
 - 🔧 Code contributions
 
-See our [Contributing Guide](./CONTRIBUTING.md) to get started.
+Contribute to the individual package repositories linked above.
 
 ### Development Setup
 
