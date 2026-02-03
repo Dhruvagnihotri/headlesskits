@@ -1,12 +1,12 @@
-[submodule "packages/react-headless-auth"]
-	path = packages/react-headless-auth
+[submodule "react-headless-auth"]
+	path = react-headless-auth
 	url = https://github.com/Dhruvagnihotri/react-headless-auth.git
-[submodule "packages/flask-headless-auth"]
-	path = packages/flask-headless-auth
+[submodule "flask-headless-auth"]
+	path = flask-headless-auth
 	url = https://github.com/Dhruvagnihotri/flask-headless-auth.git
-[submodule "packages/react-headless-payments"]
-	path = packages/react-headless-payments
+[submodule "react-headless-payments"]
+	path = react-headless-payments
 	url = https://github.com/Dhruvagnihotri/react-headless-payments.git
-[submodule "packages/flask-headless-payments"]
-	path = packages/flask-headless-payments
+[submodule "flask-headless-payments"]
+	path = flask-headless-payments
 	url = https://github.com/Dhruvagnihotri/flask-headless-payments.git

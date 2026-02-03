@@ -22,17 +22,14 @@
 
 ## 📁 Repository Structure
 
-This is a **monorepo with submodules**. Each package lives in its own repository but is included here for easy navigation:
+This is a **monorepo with submodules**. Each package lives in its own repository but is included here:
 
 ```
 headlesskits/
-├── packages/
-│   ├── react-headless-auth/      ← Submodule
-│   ├── flask-headless-auth/      ← Submodule
-│   ├── react-headless-payments/  ← Submodule
-│   └── flask-headless-payments/  ← Submodule
-├── docs/
-├── examples/
+├── react-headless-auth/       ← Submodule
+├── flask-headless-auth/       ← Submodule
+├── react-headless-payments/   ← Submodule
+├── flask-headless-payments/   ← Submodule
 └── README.md
 ```
 
@@ -63,8 +60,8 @@ Build complete authentication systems in minutes. Includes JWT, OAuth, MFA, RBAC
 
 | Package | Description | Install | Links |
 |---------|-------------|---------|-------|
-| **React Auth** | Client-side auth with smart cookie fallback | `npm i @headlesskits/react-headless-auth` | [📁 Repo](https://github.com/Dhruvagnihotri/react-headless-auth) • [📦 NPM](https://www.npmjs.com/package/@headlesskits/react-headless-auth) • [📖 Docs](./docs/auth/react.md) |
-| **Flask Auth** | Backend with 20+ routes in one line | `pip install flask-headless-auth` | [📁 Repo](https://github.com/Dhruvagnihotri/flask-headless-auth) • [🐍 PyPI](https://pypi.org/project/flask-headless-auth/) • [📖 Docs](./docs/auth/flask.md) |
+| **React Auth** | Client-side auth with smart cookie fallback | `npm i @headlesskits/react-headless-auth` | [📁 Repo](https://github.com/Dhruvagnihotri/react-headless-auth) • [📦 NPM](https://www.npmjs.com/package/@headlesskits/react-headless-auth) |
+| **Flask Auth** | Backend with 20+ routes in one line | `pip install flask-headless-auth` | [📁 Repo](https://github.com/Dhruvagnihotri/flask-headless-auth) • [🐍 PyPI](https://pypi.org/project/flask-headless-auth/) |
 
 **Key Features:**
 - ✅ JWT authentication with automatic token refresh
@@ -82,8 +79,8 @@ Accept payments without Stripe's fees. Process credit cards, subscriptions, and 
 
 | Package | Description | Install | Links |
 |---------|-------------|---------|-------|
-| **React Payments** | Payment forms and components | `npm i @headlesskits/react-headless-payments` | [📁 Repo](https://github.com/Dhruvagnihotri/react-headless-payments) • [📦 NPM](https://www.npmjs.com/package/@headlesskits/react-headless-payments) • [📖 Docs](./docs/payments/react.md) |
-| **Flask Payments** | Payment processing backend | `pip install flask-headless-payments` | [📁 Repo](https://github.com/Dhruvagnihotri/flask-headless-payments) • [🐍 PyPI](https://pypi.org/project/flask-headless-payments/) • [📖 Docs](./docs/payments/flask.md) |
+| **React Payments** | Payment forms and components | `npm i @headlesskits/react-headless-payments` | [📁 Repo](https://github.com/Dhruvagnihotri/react-headless-payments) • [📦 NPM](https://www.npmjs.com/package/@headlesskits/react-headless-payments) |
+| **Flask Payments** | Payment processing backend | `pip install flask-headless-payments` | [📁 Repo](https://github.com/Dhruvagnihotri/flask-headless-payments) • [🐍 PyPI](https://pypi.org/project/flask-headless-payments/) |
 
 **Key Features:**
 - ✅ Credit card processing
@@ -176,10 +173,6 @@ function CheckoutPage() {
 }
 ```
 
-### Both Together
-
-See the [Full Stack Example](./examples/fullstack) for authentication + payments integration.
-
 ---
 
 ## 📊 Comparison
@@ -196,35 +189,6 @@ See the [Full Stack Example](./examples/fullstack) for authentication + payments
 | **Smart Cookie Fallback** | ✅ | ❌ | ❌ | ❌ |
 | **Custom User Models** | ✅ | ❌ | ✅ | ❌ |
 
----
-
-## 📖 Documentation
-
-### Getting Started
-- [Installation Guide](./docs/getting-started.md)
-- [Architecture Overview](./docs/architecture.md)
-- [Migration Guide](./docs/migration.md)
-
-### Authentication
-- [React Auth Guide](./docs/auth/react.md)
-- [Flask Auth Guide](./docs/auth/flask.md)
-- [OAuth Setup](./docs/auth/oauth.md)
-- [Security Best Practices](./docs/auth/security.md)
-- [API Reference](./docs/auth/api-reference.md)
-
-### Payments
-- [React Payments Guide](./docs/payments/react.md)
-- [Flask Payments Guide](./docs/payments/flask.md)
-- [Payment Gateways](./docs/payments/gateways.md)
-- [Webhooks](./docs/payments/webhooks.md)
-- [API Reference](./docs/payments/api-reference.md)
-
-### Integration
-- [Auth + Payments Together](./docs/integration/combined.md)
-- [Using with Other Backends](./docs/integration/backends.md)
-- [Using with Other Frontends](./docs/integration/frontends.md)
-
----
 
 ## 💼 Real-World Usage
 
@@ -243,31 +207,6 @@ HeadlessKit powers production applications:
 - In-app purchases
 
 **Using HeadlessKit in production?** [Let us know!](https://github.com/Dhruvagnihotri/headlesskits/discussions)
-
----
-
-## 🎨 Examples
-
-### Basic Examples
-- [Auth Only - Full Stack](./examples/auth-fullstack)
-- [Auth Only - React](./examples/auth-react-only)
-- [Auth Only - Flask](./examples/auth-flask-only)
-- [Payments Only - Full Stack](./examples/payments-fullstack)
-- [Payments Only - React](./examples/payments-react-only)
-- [Payments Only - Flask](./examples/payments-flask-only)
-
-### Advanced Examples
-- [Auth + Payments Combined](./examples/combined)
-- [Multi-tenant SaaS](./examples/multi-tenant)
-- [E-commerce Platform](./examples/ecommerce)
-- [Subscription Service](./examples/subscriptions)
-- [Mobile App Backend](./examples/mobile-backend)
-
-### Framework Integrations
-- [Vue.js Integration](./examples/vue-integration)
-- [Next.js Integration](./examples/nextjs-integration)
-- [Django Backend](./examples/django-backend)
-- [FastAPI Backend](./examples/fastapi-backend)
 
 ---
 
@@ -322,29 +261,24 @@ git clone --recursive https://github.com/Dhruvagnihotri/headlesskits.git
 cd headlesskits
 
 # Work on individual packages
-cd packages/react-headless-auth
+cd react-headless-auth
 npm install
 npm run dev
 
 # Or for Flask packages
-cd packages/flask-headless-auth
+cd flask-headless-auth
 pip install -e ".[dev]"
 pytest
 ```
 
 ### Working with Submodules
 
-Each package is a git submodule pointing to its own repository:
-
 ```bash
 # Update all submodules to latest
 git submodule update --remote
 
-# Update specific submodule
-git submodule update --remote packages/react-headless-auth
-
 # Make changes in a submodule
-cd packages/react-headless-auth
+cd react-headless-auth
 git checkout -b feature/my-feature
 # ... make changes ...
 git commit -m "Add feature"
