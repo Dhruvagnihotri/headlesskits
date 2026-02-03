@@ -20,6 +20,33 @@
 
 ---
 
+## 📁 Repository Structure
+
+This is a **monorepo with submodules**. Each package lives in its own repository but is included here for easy navigation:
+
+```
+headlesskits/
+├── packages/
+│   ├── react-headless-auth/      ← Submodule
+│   ├── flask-headless-auth/      ← Submodule
+│   ├── react-headless-payments/  ← Submodule
+│   └── flask-headless-payments/  ← Submodule
+├── docs/
+├── examples/
+└── README.md
+```
+
+**Cloning this repo:**
+```bash
+# Clone with all submodules
+git clone --recursive https://github.com/Dhruvagnihotri/headlesskits.git
+
+# Or if already cloned
+git submodule update --init --recursive
+```
+
+---
+
 ## 💡 Why HeadlessKit?
 
 Building modern web apps requires authentication and payment processing. The options today:
@@ -290,13 +317,40 @@ See our [Contributing Guide](./CONTRIBUTING.md) to get started.
 ### Development Setup
 
 ```bash
-# Clone the repo
-git clone https://github.com/Dhruvagnihotri/headlesskits.git
+# Clone the repo with all submodules
+git clone --recursive https://github.com/Dhruvagnihotri/headlesskits.git
 cd headlesskits
 
-# Install dependencies (if running examples)
-npm install  # for React packages
-pip install -r requirements.txt  # for Flask packages
+# Work on individual packages
+cd packages/react-headless-auth
+npm install
+npm run dev
+
+# Or for Flask packages
+cd packages/flask-headless-auth
+pip install -e ".[dev]"
+pytest
+```
+
+### Working with Submodules
+
+Each package is a git submodule pointing to its own repository:
+
+```bash
+# Update all submodules to latest
+git submodule update --remote
+
+# Update specific submodule
+git submodule update --remote packages/react-headless-auth
+
+# Make changes in a submodule
+cd packages/react-headless-auth
+git checkout -b feature/my-feature
+# ... make changes ...
+git commit -m "Add feature"
+git push origin feature/my-feature
+
+# Then create PR in the individual repo
 ```
 
 ---
